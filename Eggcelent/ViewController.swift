@@ -37,6 +37,7 @@ class ViewController: UIViewController {
 
     @IBAction func ButtonPressed(_ sender: UIButton) {
         totalTime = HardnessValue.init(sender.currentTitle).rawValue
+        secondsPassed = 0
         timer.invalidate()
         
         titleLabel.text = sender.currentTitle!
