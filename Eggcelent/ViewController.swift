@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     }
     
     @objc func updateTimer() {
-        if secondsPassed < totalTime {
+        if secondsPassed <= totalTime {
             let percentageProgess = secondsPassed/totalTime
             
             secondsPassed += 1
